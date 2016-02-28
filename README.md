@@ -85,7 +85,18 @@ int main()
                         cout<<"\nThe list is not empty"<<endl;
 
                         break;
-                        
+            case 8:     // To make the list empty
+                        testList.makeEmpty();
+
+            case 9:     // print out the list
+                        cout<<"\nThe list: ";
+                        testList.printInfo();
+                        break;
+
+
+            case 10:    // To print out the number of occurences of an item
+                        int check;
+                        cout<<"\nEnter a number to check the number of occurences of an item"<<endl;            
             
         }
 

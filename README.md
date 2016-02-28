@@ -86,18 +86,7 @@ int main()
 
                         break;
                         
-            case 8:     // To make the list empty
-                        testList.makeEmpty();
-
-            case 9:     // print out the list
-                        cout<<"\nThe list: ";
-                        testList.printInfo();
-                        break;
-
-
-            case 10:
-                    cout<<"\n"<<testList.printInfo()<<endl;
-                    break;
+            
         }
 
 

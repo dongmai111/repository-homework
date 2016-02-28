@@ -85,6 +85,14 @@ int main()
                         cout<<"\nThe list is not empty"<<endl;
 
                         break;
+                        
+            case 8:     // To make the list empty
+                        testList.makeEmpty();
+
+            case 9:     // print out the list
+                        cout<<"\nThe list: ";
+                        testList.printInfo();
+                        break;
 
 
             case 10:
@@ -103,5 +111,29 @@ int main()
 
 
 
+
+}
+
+int menu()
+{
+    int x;
+
+        cout<<"\nEnter 1 to insert"<<endl;
+        cout<<"\nEnter 2 to delete"<<endl;
+        cout<<"\nEnter 3 to search"<<endl;
+        cout<<"\nEnter 4 to get length"<<endl;
+        cout<<"\nEnter 5 to delete all occurences"<<endl;
+        cout<<"\nEnter 6 to check if the list is full"<<endl;
+        cout<<"\nEnter 7 to check if the list is empty"<<endl;
+        cout<<"\nEnter 8 to make the list empty"<<endl;
+        cout<<"\nEnter 9 to print the list"<<endl;
+        cout<<"\nEnter 10 to print the number of occurences of an item"<<endl;
+        cin>>x;
+
+    if (x<1 || x>10)
+        cout<<"The number you enter is either too small or too large!"<<endl;
+
+    else
+        return x;
 
 }
